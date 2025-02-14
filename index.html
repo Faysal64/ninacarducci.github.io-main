@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
 <body>
 <header class="top-header" role="banner">
 	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
+	<div class="nav" role="navigation" aria-label="Navigation principale">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -36,7 +36,7 @@
 </header>
 <div id="header">
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+	<section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -61,11 +61,11 @@
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Next</span>
 		</button>
-	</div>
+	</section>
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp">
+		<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci, photographe professionnelle">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -146,15 +146,15 @@
 <footer role="contentinfo" id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
+			<h3 id="form-title">Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
+			<form action="" method="post" role="form">
 				<label for="nom">Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label>Email</label>
-				<input type="email" name="email" id="email">
-				<label>Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<input type="text" name="nom" id="nom" required aria-required="true">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required aria-required="true">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" required aria-required="true"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
