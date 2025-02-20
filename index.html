@@ -20,6 +20,29 @@
 		<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script defer src="./assets/maugallery.js"></script>
 		<script defer src="./assets/scripts.js"></script>
+
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "Thing",
+			  "name": "Nina Carducci",
+			  "image": "https://www.votre-site.com/assets/images/nina.png",
+			  "description": "Photographe professionnelle spécialisée dans le portrait, mariage et entreprises.",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			  },
+			  "telephone": "+33 5 56 67 78 89",
+			  "openingHours": "Mo-Fr 10:00-19:00",
+			  "url": "https://www.votre-site.com",
+			  "sameAs": [
+				"https://www.instagram.com/ninacarducci.photo/"
+			  ]
+			}
+			</script>
 	</head>
 <body>
 <header class="top-header" role="banner">
@@ -32,7 +55,7 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
 		</ul>
-	</div>
+	</nav>
 </header>
 <div id="header">
 
@@ -148,7 +171,7 @@
 		<div class="form-container">
 			<h3 id="form-title">Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post" role="form">
+			<form action="#" method="post" role="form">
 				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom" required aria-required="true">
 				<label for="email">Email</label>
